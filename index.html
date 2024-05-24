@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="author" content="Alchr Dev">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/style.css"> 
+    <title>Frontend Mentor | Product preview card component</title>
+    <meta property="og:title" content="Frontend Mentor | Product preview card component">
+    <meta property="og:description" content="Solution to the Product preview card component challenge on Frontend Mentor">
+    <meta property="og:image"
+      content="https://github.com/alchrdev/product-preview-card-component/raw/main/assets/images/product-preview-desktop.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:url" content="https://github.com/alchrdev/product-preview-card-component/raw/main/index.html">
+    <link rel="apple-touch-icon" href="./assets/images/favicon-32x32.png" type="image/png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  </head>
+  <body>
+    <main>
+      <article class="product">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./assets/images/image-product-desktop.jpg">
+          <img class="product-cover" src="./assets/images/image-product-mobile.jpg" alt="Image of Gabrielle Essence Eau De Parfum perfume">
+        </picture>
+        <div class="product-information">
+          <header>
+            <span class="product-tag">Perfume</span>
+            <h1 class="product-title">Gabrielle Essence Eau De Parfum</h1>
+            <p class="product-copy">
+              A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+              Perfumer-Creator for the House of CHANEL.
+            </p>
+          </header>
+          <div class="product-price">
+            <span class="product-amount">$149.99</span>
+            <span class="product-amount-old">$169.99</span>
+          </div>
+          <button class="product-btn">
+            <img src="./assets/images/icon-cart.svg" alt="Shopping cart icon to add the product to the cart">
+            <span>Add to Cart</span>
+          </button>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

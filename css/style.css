@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Fraunces:wght@700&display=swap");
+
+:root {
+  --primary-dark-cyan: hsl(158, 36%, 37%);
+  --primary-darker-cyan: hsl(158, 36%, 27%);
+  --primary-cream: hsl(30, 38%, 92%);
+  --neutral-very-dark-blue: hsl(212, 21%, 14%);
+  --neutral-dark-grayish-blue: hsl(228, 12%, 48%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --fz-paragraph: 0.875rem;
+  --ff-body: "Montserrat", sans-serif;
+  --ff-headings: "Fraunces", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-cream);
+  min-height: 100vh;
+  font-family: var(--ff-body);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.product {
+  background-color: var(--neutral-white);
+  overflow: hidden;
+  border-radius: 0.7rem;
+}
+
+.product-information {
+  padding-block: 1rem;
+  padding-inline: 1rem;
+}
+
+.product-tag,
+.product-copy,
+.product-amount-old {
+  opacity: 0.5;
+}
+
+.product-tag {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.35rem;
+}
+
+.product-title {
+  margin-block-start: 0.8rem;
+  margin-block-end: 0;
+  font-size: 1.9rem;
+  font-family: var(--ff-headings);
+  color: var(--neutral-very-dark-blue);
+}
+
+.product-copy {
+  margin-block-start: 1rem;
+  width: 30ch;
+  font-size: var(--fz-paragraph);
+  line-height: 1.5;
+}
+
+.product-price {
+  display: flex;
+  gap: 1rem;
+}
+
+.product-amount {
+  color: var(--primary-dark-cyan);
+  font-size: 2rem;
+  font-family: var(--ff-headings);
+}
+
+.product-amount-old {
+  align-self: center;
+  text-decoration: line-through;
+}
+
+.product-btn {
+  margin-block-start: 1.2rem;
+  margin-block-end: 1.2rem;
+  background-color: var(--primary-dark-cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  padding-block: 1rem;
+  padding-inline: 1rem;
+  color: var(--neutral-white);
+  text-decoration: none;
+  border-radius: 0.5rem;
+  border: none;
+  width: 100%;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.product-btn:hover {
+  cursor: pointer;
+  background-color: var(--primary-darker-cyan);
+}
+
+@media (min-width: 48em) {
+  .product {
+    display: grid;
+    justify-content: start;
+    grid-template-columns: auto 1fr;
+    max-width: 40rem;
+  }
+
+  .product-information {
+    padding-block: 1.8rem;
+    padding-inline: 1.8rem;
+  }
+
+  .product-cover {
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .product-title {
+    max-width: 10ch;
+  }
+}
